@@ -36,6 +36,9 @@ jobs:
     - name: Build with Gradle Wrapper
       run: ./gradlew build
 
+    - name: Scopri il nome del file JAR
+      run: ls -lh build/libs/
+
     - name: Build and Push Docker image
       uses: mr-smithers-excellent/docker-build-push@v7
       with:
